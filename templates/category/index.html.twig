@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Category {% endblock %}
+
+{% block body %}
+ <a href="/category/new">Add category</a>
+ {% for category in category %}
+ <h1>Category</h1>
+ <h2>text: {{ category.category }}</h2>
+ <p>date: {{ category.description }}</p>
+  <a href="/category/edit/{{category.id}}">Edit</a> <a href="/category/del/{{category.id}}">Delete</a>
+ <hr>
+ {% endfor %}
+ <a href="/category">Go Back</a>
+{% endblock %}

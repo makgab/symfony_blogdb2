@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} BLOG {% endblock %}
+
+{% block body %}
+ <a href="/new">Add post</a>
+ {% for blog in blog %}
+ <h1>Blog entry</h1>
+ <h2>text: {{ blog.post }}</h2>
+ <p>date: {{ blog.date |date('Y-m-d') }}</p>
+  <a href="/blog/edit/{{blog.id}}">Edit</a> <a href="/blog/del/{{blog.id}}">Delete</a>
+ <hr>
+ {% endfor %}
+ <a href="/blog">Go Back</a>
+{% endblock %}
