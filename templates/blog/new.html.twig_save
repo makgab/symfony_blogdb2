@@ -1,0 +1,4 @@
+{# templates/blog/new.html.twig #}
+{{ form(form) }}
+
+<a href="/blog">Index</a>

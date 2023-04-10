@@ -1,0 +1,4 @@
+{# templates/category/new.html.twig #}
+{{ form(form) }}
+
+<a href="/category">Index</a>

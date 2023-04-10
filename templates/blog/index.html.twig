@@ -4,6 +4,8 @@
 
 {% block body %}
  <a href="/new">Add post</a>
+ <br>
+ <a href="/category/new">Add category</a>
  {% for blog in blog %}
  <h1>Blog entry</h1>
  <h2>text: {{ blog.post }}</h2>
